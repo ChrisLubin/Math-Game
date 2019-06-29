@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+ <head>
+  <title>Maths Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" width="device=width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" type="text/css" href="CSS/mycss.css">
+ </head>
+
+ <body>
+  <div id="container">
+   <div id="correct" class="correctOrWrong">
+    <p>That's Correct!</p>
+   </div>
+   <div id="wrong" class="correctOrWrong">
+    <p>That's Incorrect!</p>
+   </div>
+   <div id="score">
+    <p>Score : 0</p>
+   </div>
+   <div class="clear">
+   </div>
+   <div id="display">
+   </div>
+   <div class="clear">
+   </div>
+   <div id="instructions">
+    <p>Click on the correct answer</p>
+   </div>
+   <div id="options">
+    <div id="option1" class="options" onclick="CheckAnswer(0)">
+    </div>
+    <div id="option2" class="options" onclick="CheckAnswer(1)">
+    </div>
+    <div id="option3" class="options" onclick="CheckAnswer(2)">
+    </div>
+    <div id="option4" class="options" onclick="CheckAnswer(3)">
+    </div>
+   </div>
+   <div class="clear">
+   </div>
+   <div id="togglegame" onclick="ToggleGame()">
+    <p>Start Game</p>
+   </div>
+   <div id="counter">
+    <p>Time Remaining : 60</p>
+   </div>
+   <div class="clear">
+   </div>
+   <div id="endResults">
+    <p>GAME OVER!</p>
+    <p>YOUR SCORE IS 12.</p>
+   </div>
+  </div>
+ </body>
+
+ <script src="JS/myjs.js">
+ </script>
+
+</html>
