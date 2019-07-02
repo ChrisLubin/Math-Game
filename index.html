@@ -1,61 +1,61 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
- <head>
-  <title>Maths Game</title>
-  <meta charset="utf-8">
-  <meta name="viewport" width="device=width, initial-scale=1.0, user-scalable=yes">
-  <link rel="stylesheet" type="text/css" href="CSS/mycss.css">
- </head>
+<head>
+    <title>Math Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" width="device=width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
 
- <body>
-  <div id="container">
-   <div id="correct" class="correctOrWrong">
-    <p>That's Correct!</p>
-   </div>
-   <div id="wrong" class="correctOrWrong">
-    <p>That's Incorrect!</p>
-   </div>
-   <div id="score">
-    <p>Score : 0</p>
-   </div>
-   <div class="clear">
-   </div>
-   <div id="display">
-   </div>
-   <div class="clear">
-   </div>
-   <div id="instructions">
-    <p>Click on the correct answer</p>
-   </div>
-   <div id="options">
-    <div id="option1" class="options" onclick="CheckAnswer(0)">
+<body>
+    <div id="container">
+        <!-- Header/Feedback -->
+        <div id="header">
+            <div id="feedback-correct" class="feedback">
+                <span>That's Correct!</span>
+            </div>
+            <div id="feedback-wrong" class="feedback">
+                <span>That's Incorrect!</span>
+            </div>
+            <div id="score">
+                <p>Score : 0</p>
+            </div>
+        </div>
+        <!-- Display where problem is shown -->
+        <div id="display">
+        </div>
+        <!-- Instructions -->
+        <div id="instructions">
+            <span>Click on the correct answer</span>
+        </div>
+        <!-- Four options -->
+        <div id="options">
+            <div id="option1" class="options" onclick="CheckAnswer(0)">
+            </div>
+            <div id="option2" class="options" onclick="CheckAnswer(1)">
+            </div>
+            <div id="option3" class="options" onclick="CheckAnswer(2)">
+            </div>
+            <div id="option4" class="options" onclick="CheckAnswer(3)">
+            </div>
+        </div>
+        <!-- Footer -->
+        <div id="footer">
+            <div></div>
+            <div id="togglegame" onclick="ToggleGame()">
+                <span>Start Game</span>
+            </div>
+            <div id="counter">
+                <span>Time Remaining : 60</span>
+            </div>
+        </div>
+        <!-- End result -->
+        <div id="endResults">
+        </div>
     </div>
-    <div id="option2" class="options" onclick="CheckAnswer(1)">
-    </div>
-    <div id="option3" class="options" onclick="CheckAnswer(2)">
-    </div>
-    <div id="option4" class="options" onclick="CheckAnswer(3)">
-    </div>
-   </div>
-   <div class="clear">
-   </div>
-   <div id="togglegame" onclick="ToggleGame()">
-    <p>Start Game</p>
-   </div>
-   <div id="counter">
-    <p>Time Remaining : 60</p>
-   </div>
-   <div class="clear">
-   </div>
-   <div id="endResults">
-    <p>GAME OVER!</p>
-    <p>YOUR SCORE IS 12.</p>
-   </div>
-  </div>
- </body>
 
- <script src="JS/myjs.js">
- </script>
-
+    <!-- My JS File -->
+    <script src="JS/index.js"></script>
+</body>
 </html>
