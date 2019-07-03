@@ -14,6 +14,10 @@
 
 /* Changes so countdown does not clip into start/reset game button */
 @media only screen and (max-width: 670px) {
+  #container {
+    height: 60% !important;
+  }
+
   #footer {
     justify-content: center !important;
   }
@@ -48,9 +52,10 @@
   }
 }
 
-body {
+html, body {
   display: flex;
   justify-content: center;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -128,6 +133,7 @@ body {
   margin-right: 20px;
   height: 100%;
   padding: 0 10px;
+  align-items: center;
   background: #F1FE98;
   text-align: center;
   box-shadow: 0px 4px 0px 0px #9DA758;
